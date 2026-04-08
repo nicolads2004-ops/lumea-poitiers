@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { ref, onMounted } from 'vue'
-
 const counters = ref([
   { value: 0, target: 120, suffix: '+', label: 'sites créés' },
   { value: 0, target: 98, suffix: '%', label: 'clients satisfaits' },

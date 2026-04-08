@@ -119,6 +119,8 @@ const features = [
   { icon: 'lucide:graduation-cap', title: 'Formation incluse', description: 'Nous vous formons à la gestion de votre site : modification de textes, ajout d\'images, publication de pages. Vous gardez la main sur votre contenu sans dépendre d\'un prestataire.' }
 ]
 
+const openFaq = ref(0)
+
 useHead({
   title: 'Création de site vitrine à Poitiers — Votre image professionnelle en ligne | LUMEA',
   meta: [
@@ -468,14 +470,28 @@ useHead({
             </h2>
           </div>
 
-          <UAccordion
-            :items="faqItems"
-            class="space-y-3"
-          >
-            <template #leading="{ item }">
-              <UIcon :name="item.icon" class="w-5 h-5 text-sky-400/60" />
-            </template>
-          </UAccordion>
+          <div class="space-y-3">
+            <div
+              v-for="(item, index) in faqItems"
+              :key="index"
+              class="border border-gray-800 rounded-xl overflow-hidden transition-colors"
+              :class="openFaq === index ? 'border-sky-500/20 bg-gray-900/60' : 'bg-gray-900/30'"
+            >
+              <button
+                class="flex items-center justify-between w-full px-6 py-4 text-left transition-colors"
+                @click="openFaq = openFaq === index ? -1 : index"
+              >
+                <span class="text-sm font-semibold text-white pr-4">{{ item.label }}</span>
+                <UIcon
+                  :name="openFaq === index ? 'i-lucide-chevron-up' : 'i-lucide-chevron-down'"
+                  class="w-5 h-5 text-gray-400 shrink-0"
+                />
+              </button>
+              <div v-show="openFaq === index" class="px-6 pb-4 text-sm text-gray-400 leading-relaxed">
+                {{ item.content }}
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 

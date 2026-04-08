@@ -1,7 +1,7 @@
-const showForm = ref(false)
-const formSubmitted = ref(false)
-
 export const useContactForm = () => {
+  const showForm = ref(false)
+  const formSubmitted = ref(false)
+
   function toggle() {
     showForm.value = !showForm.value
     if (showForm.value) formSubmitted.value = false
