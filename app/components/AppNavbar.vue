@@ -69,21 +69,6 @@ function isActive(href: string) {
       ? 'bg-slate-950/80 backdrop-blur-xl border-b border-white/5 shadow-lg shadow-black/20'
       : 'bg-transparent'"
   >
-    <!-- Top bar with phone -->
-    <div class="hidden lg:block border-b border-white/5 bg-gray-950/50">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-end h-8">
-        <a href="tel:+33769801190" class="flex items-center gap-1.5 text-xs text-white/50 hover:text-green-400 transition-colors">
-          <UIcon name="i-lucide-phone" class="w-3 h-3 text-green-400" />
-          07 69 80 11 90
-        </a>
-        <span class="mx-3 w-px h-3 bg-white/10" />
-        <a href="mailto:contact@poitiers.digital" class="flex items-center gap-1.5 text-xs text-white/50 hover:text-sky-400 transition-colors">
-          <UIcon name="i-lucide-mail" class="w-3 h-3" />
-          contact@poitiers.digital
-        </a>
-      </div>
-    </div>
-
     <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-16 lg:h-18">
 
@@ -193,6 +178,13 @@ function isActive(href: string) {
 
         <!-- Desktop CTA -->
         <div class="hidden lg:flex items-center gap-3">
+          <a
+            href="tel:+33769801190"
+            class="flex items-center gap-2 px-5 py-2.5 text-sm font-semibold text-white bg-green-600 hover:bg-green-500 rounded-xl shadow-lg shadow-green-600/25 hover:shadow-green-500/30 transition-all duration-200"
+          >
+            <UIcon name="i-lucide-phone" class="w-4 h-4" />
+            Nous appeler
+          </a>
           <a
             href="#contact"
             class="px-5 py-2.5 text-sm font-semibold text-white bg-sky-500 hover:bg-sky-400 rounded-xl shadow-lg shadow-sky-500/25 hover:shadow-sky-400/30 transition-all duration-200"
