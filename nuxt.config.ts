@@ -42,7 +42,7 @@ export default defineNuxtConfig({
       htmlAttrs: { lang: 'fr' },
       title: 'Création de site internet à Poitiers — Sites vitrine, e-commerce & sur-mesure | LUMEA',
       meta: [
-        { name: 'google-site-verification', content: '' },
+        { name: 'google-site-verification', content: 'FfyzaYqA-7Pf1Ga5i4xsF9ZxcObYm-WMBm7dyoSZW_g' },
         { name: 'description', content: 'Agence web à Poitiers spécialisée en création de sites internet. Sites vitrine, e-commerce, refonte. Design sur-mesure, SEO intégré, devis gratuit.' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         // Open Graph
