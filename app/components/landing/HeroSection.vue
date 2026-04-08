@@ -92,11 +92,11 @@ onMounted(() => {
             Devis gratuit
           </a>
           <a
-            href="#realisations"
+            href="#services"
             class="inline-flex items-center justify-center gap-2 px-8 py-4 text-base font-semibold text-gray-300 bg-transparent border border-gray-700 hover:border-gray-500 hover:text-white rounded-xl transition-all duration-200"
           >
-            <UIcon name="i-lucide-eye" class="w-5 h-5" />
-            Voir nos réalisations
+            <UIcon name="i-lucide-layers" class="w-5 h-5" />
+            Nos services
           </a>
         </div>
 

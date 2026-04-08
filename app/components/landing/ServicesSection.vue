@@ -1,5 +1,5 @@
 <template>
-  <section data-reveal="services" class="relative py-24 bg-gray-950">
+  <section id="services" data-reveal="services" class="relative py-24 bg-gray-950">
     <!-- Subtle gradient -->
     <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-sky-500/5 blur-[120px] rounded-full" />
 

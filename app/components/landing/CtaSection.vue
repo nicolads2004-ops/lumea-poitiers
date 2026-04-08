@@ -187,8 +187,8 @@ async function handleSubmit() {
                   <UIcon name="i-lucide-phone" class="w-5 h-5 text-sky-400 mt-0.5" />
                   <div>
                     <div class="text-sm font-medium text-white">Téléphone</div>
-                    <a href="tel:+33549000000" class="text-sm text-gray-400 hover:text-sky-400 transition-colors">
-                      05 49 00 00 00
+                    <a href="tel:+33769801190" class="text-sm text-gray-400 hover:text-sky-400 transition-colors">
+                      07 69 80 11 90
                     </a>
                   </div>
                 </div>

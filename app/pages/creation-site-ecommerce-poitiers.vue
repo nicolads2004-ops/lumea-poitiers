@@ -141,7 +141,7 @@ useHead({
               '@type': 'LocalBusiness',
               '@id': 'https://lumea.poitiers.digital/#business',
               name: 'LUMEA',
-              telephone: '+33 5 49 00 00 00',
+              telephone: '+33 7 69 80 11 90',
               email: 'contact@poitiers.digital',
               address: {
                 '@type': 'PostalAddress',
@@ -536,13 +536,13 @@ useHead({
                   Devis gratuit — réponse sous 48h
                 </UButton>
                 <UButton
-                  href="tel:+33549000000"
+                  href="tel:+33769801190"
                   variant="outline"
                   size="lg"
                   class="font-semibold border-white/10 text-white/70 hover:text-white hover:border-white/20 hover:bg-white/5"
                 >
                   <UIcon name="lucide:phone" class="w-4 h-4 mr-2" />
-                  05 49 00 00 00
+                  07 69 80 11 90
                 </UButton>
               </div>
             </div>

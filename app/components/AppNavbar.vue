@@ -72,9 +72,9 @@ function isActive(href: string) {
     <!-- Top bar with phone -->
     <div class="hidden lg:block border-b border-white/5 bg-gray-950/50">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-end h-8">
-        <a href="tel:+33549000000" class="flex items-center gap-1.5 text-xs text-white/50 hover:text-sky-400 transition-colors">
-          <UIcon name="i-lucide-phone" class="w-3 h-3" />
-          05 49 00 00 00
+        <a href="tel:+33769801190" class="flex items-center gap-1.5 text-xs text-white/50 hover:text-green-400 transition-colors">
+          <UIcon name="i-lucide-phone" class="w-3 h-3 text-green-400" />
+          07 69 80 11 90
         </a>
         <span class="mx-3 w-px h-3 bg-white/10" />
         <a href="mailto:contact@poitiers.digital" class="flex items-center gap-1.5 text-xs text-white/50 hover:text-sky-400 transition-colors">
@@ -223,9 +223,9 @@ function isActive(href: string) {
       <div v-if="isMobileMenuOpen" class="lg:hidden border-t border-white/5 bg-slate-950/95 backdrop-blur-xl">
         <div class="max-w-7xl mx-auto px-4 py-3 space-y-1">
           <!-- Phone mobile -->
-          <a href="tel:+33549000000" class="flex items-center gap-2 px-3 py-2.5 text-sm text-sky-400">
-            <UIcon name="i-lucide-phone" class="w-4 h-4" />
-            05 49 00 00 00
+          <a href="tel:+33769801190" class="flex items-center gap-2 px-3 py-2.5 text-sm text-green-400 font-medium">
+            <UIcon name="i-lucide-phone" class="w-4 h-4 text-green-400" />
+            07 69 80 11 90
           </a>
 
           <NuxtLink to="/" class="flex items-center px-3 py-2.5 rounded-lg text-sm font-medium transition-colors" :class="isActive('/') ? 'text-sky-400 bg-sky-400/[0.08]' : 'text-white/70 hover:text-white hover:bg-white/5'" @click="closeMobileMenu">

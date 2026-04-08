@@ -113,11 +113,11 @@ function scrollToTop() {
             </li>
             <li>
               <a
-                href="tel:+33549000000"
+                href="tel:+33769801190"
                 class="flex items-center gap-3 text-sm text-white/55 hover:text-white transition-colors duration-150 group"
               >
                 <UIcon name="lucide:phone" class="w-4 h-4 shrink-0 text-sky-400/60 group-hover:text-sky-400 transition-colors" />
-                <span>05 49 00 00 00</span>
+                <span>07 69 80 11 90</span>
               </a>
             </li>
             <li>
