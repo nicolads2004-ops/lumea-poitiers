@@ -4,9 +4,9 @@ const readingTime = '7 min de lecture'
 const author = "L'équipe LUMEA"
 
 useHead({
-  title: 'Combien coûte un site internet à Poitiers en 2026 ? Guide complet des tarifs',
+  title: 'Combien coûte un site internet à Poitiers ? | LUMEA',
   meta: [
-    { name: 'description', content: 'Découvrez les tarifs de création de site internet à Poitiers en 2026 : site vitrine, e-commerce, sur-mesure. Comparatif freelance vs agence, coûts cachés et devis gratuit.' },
+    { name: 'description', content: 'Découvrez les tarifs de création de site internet à Poitiers en 2026 : site vitrine, e-commerce, sur-mesure. Comparatif freelance vs agence et coûts cachés à prévoir.' },
     { name: 'robots', content: 'index, follow' },
     { property: 'og:title', content: 'Combien coûte un site internet à Poitiers en 2026 ? Guide complet des tarifs' },
     { property: 'og:description', content: 'Guide complet des tarifs de création de site internet à Poitiers. Fourchettes de prix, comparatif et coûts cachés.' },

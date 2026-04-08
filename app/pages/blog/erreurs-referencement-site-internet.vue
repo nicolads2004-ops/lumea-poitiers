@@ -4,11 +4,11 @@ const readingTime = '7 min de lecture'
 const author = "L'équipe LUMEA"
 
 useHead({
-  title: '5 erreurs qui tuent le référencement de votre site internet | LUMEA',
+  title: '5 erreurs SEO qui tuent la visibilité de votre site à Poitiers | LUMEA',
   meta: [
-    { name: 'description', content: 'Découvrez les 5 erreurs les plus courantes qui empêchent votre site internet d\'apparaître sur Google, et comment les corriger pour gagner en visibilité.' },
+    { name: 'description', content: 'Les 5 erreurs les plus fréquentes qui empêchent les sites internet de Poitiers d\'apparaître sur Google. Solutions concrètes pour améliorer votre référencement.' },
     { name: 'robots', content: 'index, follow' },
-    { property: 'og:title', content: '5 erreurs qui tuent le référencement de votre site internet | LUMEA' },
+    { property: 'og:title', content: '5 erreurs SEO qui tuent la visibilité de votre site à Poitiers | LUMEA' },
     { property: 'og:description', content: '5 erreurs SEO courantes qui empêchent votre site d\'apparaître sur Google. Solutions concrètes pour chaque problème.' },
     { property: 'og:type', content: 'article' },
     { property: 'og:url', content: 'https://lumea.poitiers.digital/blog/erreurs-referencement-site-internet' },
@@ -257,7 +257,7 @@ useHead({
           </p>
           <p class="text-gray-300 leading-relaxed">
             Si votre site actuel souffre de l'une de ces erreurs, il n'est pas trop tard pour corriger le tir. Une
-            <NuxtLink to="/services/refonte" class="text-sky-400 hover:text-sky-300 underline underline-offset-4">refonte de site internet</NuxtLink>
+            <NuxtLink to="/refonte-site-internet-poitiers" class="text-sky-400 hover:text-sky-300 underline underline-offset-4">refonte de site internet à Poitiers</NuxtLink>
             bien menée peut transformer un site invisible en une machine à générer des clients.
           </p>
         </section>

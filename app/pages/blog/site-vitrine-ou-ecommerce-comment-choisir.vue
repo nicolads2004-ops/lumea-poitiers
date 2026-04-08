@@ -4,9 +4,9 @@ const readingTime = '8 min de lecture'
 const author = "L'équipe LUMEA"
 
 useHead({
-  title: 'Site vitrine ou site e-commerce : comment choisir ? | Guide 2026',
+  title: 'Site vitrine ou e-commerce à Poitiers : comment choisir ? | LUMEA',
   meta: [
-    { name: 'description', content: 'Site vitrine ou site e-commerce ? Découvrez les différences, avantages et limites de chaque solution pour choisir le site adapté à votre entreprise à Poitiers.' },
+    { name: 'description', content: 'Site vitrine ou site e-commerce pour votre entreprise à Poitiers ? Comparatif complet, avantages, limites et cas concrets pour faire le bon choix. Guide LUMEA 2026.' },
     { name: 'robots', content: 'index, follow' },
     { property: 'og:title', content: 'Site vitrine ou site e-commerce : comment choisir ? | Guide 2026' },
     { property: 'og:description', content: 'Comparatif complet entre site vitrine et site e-commerce. Cas concrets, tableau comparatif et aide à la décision.' },

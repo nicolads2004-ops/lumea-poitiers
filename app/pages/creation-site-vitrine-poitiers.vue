@@ -122,9 +122,9 @@ const features = [
 const openFaq = ref(0)
 
 useHead({
-  title: 'Création de site vitrine à Poitiers — Votre image professionnelle en ligne | LUMEA',
+  title: 'Création de site vitrine à Poitiers | LUMEA',
   meta: [
-    { name: 'description', content: 'Création de site vitrine à Poitiers par LUMEA. Design sur-mesure, responsive, SEO intégré. Artisans, PME, professions libérales. Devis gratuit.' },
+    { name: 'description', content: 'Création de site vitrine à Poitiers pour artisans, PME et professions libérales. Design sur-mesure, SEO intégré, formation incluse. Devis gratuit chez LUMEA.' },
     { name: 'robots', content: 'index, follow' },
     { property: 'og:title', content: 'Création de site vitrine à Poitiers | LUMEA' },
     { property: 'og:description', content: 'Site vitrine professionnel à Poitiers. Design sur-mesure, SEO intégré. Devis gratuit.' },

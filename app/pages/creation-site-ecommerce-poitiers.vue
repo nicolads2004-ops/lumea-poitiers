@@ -111,9 +111,9 @@ const comparison = {
 const openFaq = ref(0)
 
 useHead({
-  title: 'Création de site e-commerce à Poitiers — Vendez en ligne avec une boutique performante | LUMEA',
+  title: 'Création site e-commerce à Poitiers | LUMEA',
   meta: [
-    { name: 'description', content: 'Création de site e-commerce à Poitiers par LUMEA. Boutique en ligne WooCommerce ou Shopify, paiement sécurisé, gestion stocks. Devis gratuit.' },
+    { name: 'description', content: 'Création de boutique en ligne à Poitiers. Site e-commerce performant avec paiement sécurisé, gestion des stocks et SEO produits. Devis gratuit chez LUMEA.' },
     { name: 'robots', content: 'index, follow' },
     { property: 'og:title', content: 'Création de site e-commerce à Poitiers | LUMEA' },
     { property: 'og:description', content: 'Boutique en ligne professionnelle à Poitiers. WooCommerce, Shopify, paiement sécurisé.' },

@@ -35,15 +35,17 @@ const faqItems = [
 ]
 
 useHead({
-  title: 'Création de site internet à Poitiers — Sites vitrine, e-commerce & sur-mesure | LUMEA',
+  title: 'Création de site internet à Poitiers | LUMEA',
   meta: [
-    { name: 'description', content: 'LUMEA, agence de création de sites internet à Poitiers. Sites vitrine, e-commerce et refonte sur-mesure. SEO inclus, design premium, support local. Devis gratuit.' },
+    { name: 'description', content: 'Agence web à Poitiers spécialisée en création de sites internet. Sites vitrine, e-commerce et refonte sur-mesure. SEO intégré, devis gratuit. Contactez LUMEA.' },
     { name: 'robots', content: 'index, follow' },
     { property: 'og:title', content: 'Création de site internet à Poitiers | LUMEA' },
-    { property: 'og:description', content: 'Agence web à Poitiers. Sites vitrine, e-commerce et refonte. SEO inclus, design premium.' },
+    { property: 'og:description', content: 'Agence web à Poitiers spécialisée en création de sites internet. Sites vitrine, e-commerce et refonte sur-mesure. SEO intégré, devis gratuit.' },
     { property: 'og:type', content: 'website' },
     { property: 'og:url', content: 'https://lumea.poitiers.digital/' },
-    { property: 'og:locale', content: 'fr_FR' }
+    { property: 'og:locale', content: 'fr_FR' },
+    { property: 'og:site_name', content: 'LUMEA' },
+    { property: 'og:image', content: 'https://lumea.poitiers.digital/og-image.jpg' }
   ],
   link: [
     { rel: 'canonical', href: 'https://lumea.poitiers.digital/' }

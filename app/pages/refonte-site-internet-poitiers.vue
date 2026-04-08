@@ -123,7 +123,7 @@ const beforeAfter = [
 const openFaq = ref(0)
 
 useHead({
-  title: 'Refonte de site internet à Poitiers — Modernisez votre présence en ligne | LUMEA',
+  title: 'Refonte de site internet à Poitiers | LUMEA',
   meta: [
     { name: 'description', content: 'Refonte de site internet à Poitiers par LUMEA. Modernisez votre site web : design, performance, SEO, mobile. Devis gratuit.' },
     { name: 'robots', content: 'index, follow' },
