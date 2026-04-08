@@ -156,12 +156,6 @@ body {
 
 /* ─── Scroll Reveal ─── */
 [data-reveal] {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
-              transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
-}
-[data-reveal].revealed {
   opacity: 1;
   transform: translateY(0);
 }
@@ -174,12 +168,6 @@ body {
 
 /* ─── Stagger Reveal ─── */
 [data-reveal-stagger] [data-reveal-child] {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1),
-              transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
-}
-[data-reveal-stagger] [data-reveal-child].revealed {
   opacity: 1;
   transform: translateY(0);
 }
