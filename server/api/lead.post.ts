@@ -1,5 +1,3 @@
-import nodemailer from 'nodemailer'
-
 interface LeadBody {
   name: string
   email: string
@@ -28,18 +26,20 @@ export default defineEventHandler(async (event) => {
     })
   }
 
-  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
-  if (!emailRegex.test(body.email)) {
+  const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
+  if (!emailRegex.test(body.email?.trim() || '')) {
     throw createError({
       statusCode: 400,
-      statusMessage: 'Adresse email invalide'
+      statusMessage: 'Adresse email invalide.'
     })
   }
 
-  const config = useRuntimeConfig()
+  const { default: nodemailer } = await import('nodemailer')
 
   const transporter = nodemailer.createTransport({
-    service: 'gmail',
+    host: 'smtp.gmail.com',
+    port: 465,
+    secure: true,
     auth: {
       user: process.env.GMAIL_USER,
       pass: process.env.GMAIL_APP_PASSWORD
