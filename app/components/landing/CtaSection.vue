@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const step = ref(0)
-const totalSteps = 4
+const totalSteps = 5
 const submitting = ref(false)
 const submitted = ref(false)
 
@@ -9,11 +9,18 @@ const form = reactive({
   websiteUrl: '',
   problems: [] as string[],
   projectType: '',
+  timing: '',
   companyName: '',
   name: '',
   email: '',
   phone: ''
 })
+
+const timings = [
+  { value: 'immediat', label: 'Immédiat', desc: "J'en ai besoin maintenant", icon: 'i-lucide-zap', color: '#EF4444' },
+  { value: '3-6mois', label: 'Dans 3 à 6 mois', desc: 'Je prépare mon projet', icon: 'i-lucide-calendar', color: '#F59E0B' },
+  { value: '+1an', label: 'Dans plus d\'un an', desc: 'Je me renseigne', icon: 'i-lucide-hourglass', color: '#9CA3AF' }
+]
 
 const errors = ref('')
 
@@ -30,6 +37,7 @@ function nextStep() {
   if (step.value === 1 && !form.hasWebsite) { errors.value = 'Sélectionnez une option'; return }
   if (step.value === 2 && form.problems.length === 0) { errors.value = 'Sélectionnez au moins un problème'; return }
   if (step.value === 3 && !form.projectType) { errors.value = 'Sélectionnez une option'; return }
+  if (step.value === 4 && !form.timing) { errors.value = 'Sélectionnez une option'; return }
   step.value++
 }
 
@@ -189,6 +197,25 @@ const daysThisYear = computed(() => {
         </div>
 
         <div v-if="step === 4" class="glass-card rounded-2xl p-5">
+          <h3 class="text-white font-bold text-base mb-3">Quand en avez-vous besoin ?</h3>
+          <div class="space-y-2">
+            <button
+              v-for="t in timings"
+              :key="t.value"
+              class="w-full p-3 rounded-xl border text-left flex items-center gap-3 transition-all"
+              :class="form.timing === t.value ? 'border-sky-500/50 bg-sky-500/10' : 'border-white/10 bg-white/[0.02]'"
+              @click="form.timing = t.value"
+            >
+              <UIcon :name="t.icon" class="w-4 h-4 flex-shrink-0" :style="{ color: form.timing === t.value ? t.color : 'rgba(255,255,255,0.3)' }" />
+              <div class="flex-1">
+                <div class="font-medium text-sm" :class="form.timing === t.value ? 'text-white' : 'text-white/60'">{{ t.label }}</div>
+                <div class="text-xs" :class="form.timing === t.value ? 'text-white/50' : 'text-white/30'">{{ t.desc }}</div>
+              </div>
+            </button>
+          </div>
+        </div>
+
+        <div v-if="step === 5" class="glass-card rounded-2xl p-5">
           <h3 class="text-white font-bold text-base mb-1">Dernière étape — on vous rappelle</h3>
           <p class="text-white/30 text-xs mb-3">Devis envoyé sous 24h. Aucun engagement.</p>
           <div class="space-y-3">
