@@ -34,7 +34,7 @@ const currentYear = new Date().getFullYear()
           <h4 class="text-white font-semibold mb-4">Contact</h4>
           <ul class="space-y-3 text-sm">
             <li>
-              <a href="mailto:contact@poitiers.digital" class="flex items-center gap-2 text-slate-400 hover:text-white transition-colors">
+              <a href="/#contact" class="flex items-center gap-2 text-slate-400 hover:text-white transition-colors">
                 <UIcon name="i-lucide-mail" class="w-4 h-4 text-sky-400/70" />
                 contact@poitiers.digital
               </a>
