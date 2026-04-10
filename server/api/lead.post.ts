@@ -111,6 +111,7 @@ export default defineEventHandler(async (event) => {
   await transporter.sendMail({
     from: `"LUMEA Leads" <${process.env.GMAIL_USER}>`,
     to: 'contact@poitiers.digital',
+    cc: ['matthieu@shark-graphik.fr', 'nicolads2004@gmail.com'],
     replyTo: body.email,
     subject: `[LUMEA] Nouveau lead — ${body.name}${body.companyName ? ` (${body.companyName})` : ''} — ${projectLabel}`,
     html: htmlBody
